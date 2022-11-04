@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang-="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--This tag allows the web author to decide which version of Internet explorer that the page should be rendered as.就是选择哪个版本的页面-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PORTFOLIO</title>
+
+        <!--rel used to define the relationship between the linked file and html, href refers to the reference sites.-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster"> 
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+        <link rel="stylesheet" href="portfolioStyle.css">
+        <script src="https://kit.fontawesome.com/feff919479.js" crossorigin="anonymous"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <style>
+            .Container{
+                display: grid;
+                grid-template-rows: 68px 750px 880px 850px 1000px 500px;
+                overflow-y: hidden;
+                overflow-x: scroll;
+            }
+            .Header{
+                display: grid;
+                grid-template-columns: 1fr 18fr;
+                height: 170px;
+                position: sticky;
+            }
+            .logo{
+                width: 100%;
+                height: 62px;
+            }
+            .HomePage{
+                background-image: url("Home.gif");
+                background-color: rgb(249, 249, 255);
+                background-position: center;
+                background-repeat: repeat-x;
+                background-size:contain;
+                width: auto;
+                height: 750px;
+                display: inline-block;
+            }
+            .AboutMe{
+                background-color: #85FFBD;
+                background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 50%, #ffffff 100%);
+                display: inline-block;
+            }
+            .about-text{
+                width: 100%;
+                float: left;
+                padding-left: 50px;
+            }
+            .about-text{
+                font-size: 19px;
+                margin: 30px 30px 30px 0px;
+                letter-spacing: 1px;
+                color: #000;
+                padding-right: 0px;
+            }
+            .about-text h1{
+                font-size: 51px;
+                color: #000;
+                margin-top: 70px;
+                margin-bottom: 22px;
+                font-weight: 700;
+                line-height: 1;
+                border-bottom: 1px solid lightpink;
+                border-width: 3px;
+            }
+            .about-text h3{
+                font-size: 17px;
+                color: #000;
+                font-weight:400;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                margin-bottom: 22px;
+            }
+
+            .profile{
+                display: grid;
+                grid-template-columns: 1fr 4fr;
+                width: 100%;
+                float: left;
+                padding-left: 50px;
+                padding-right: 50px;
+            } 
+            .profileResize{
+                height: 430px;
+                width: 430px;
+                margin-right: 38px;
+                border: 2.5px solid rgb(255,255,255);
+                border-top-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+            }
+            .profileRight{
+                background-color: lightpink;
+                padding: 5px;
+                line-height: 1.6;
+                display: grid;
+                grid-template-rows: 1fr 2fr 2fr;
+                height: 600px;
+                border-radius: 15px;
+            }
+            .profileRightUpper{
+                margin-left: 20px;
+                border-bottom: 2px solid white;
+                padding-right: 60px;
+            }
+            .profileRightMiddle{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                background-color: rgb(255, 230, 230);
+                border-radius: 30px;
+                margin-top: 30px;
+                margin-left: 30px;
+                margin-right: 30px;
+                width: 850px;
+            }
+            .profileRightMiddle div h5{
+                padding-bottom: 15px;
+            }
+            .profileRM-left{
+               margin-top: 18px;
+               text-align: left;
+               padding-left: 8px;
+            }
+            .profileRM-right{
+                margin-top: 18px;
+                text-align: left; 
+                display: block;
+                padding-left: 8px;
+            }
+            h5{
+                margin: 10px; 
+            }
+            .profileRightLower{
+                background-image: url("kirby.gif");
+                background-color: rgb(255, 251, 251);
+                border-radius: 30px;
+                margin: 30px;
+                width: 850px;
+            }
+
+            .Education{
+                background: rgb(123,211,232);
+                background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(123,211,232,1) 0%, rgba(50,171,255,1) 100%);
+                color: #0f2852;
+                display: grid;
+                grid-template-rows: 1fr 4fr ;
+                color: white;
+                width: 100%;
+                float: left;
+            }
+            .upperEducation{
+                color: black;
+                padding-left: 55px;
+            }
+            .upperEducation h1{
+                font-size: 51px;
+                color: #000;
+                margin-top: 104px;
+                margin-bottom: 25px;
+                font-weight: 700;
+                line-height: 1;
+                border-bottom: 1px solid rgb(255, 255, 255);
+                border-width: 3px;
+            }
+            .lowerEducation{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            .upperEducation h3{
+                font-size: 17px;
+                color: #000;
+                font-weight:400;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                padding-bottom: 27px;
+            }
+            .keathwa2 img{
+                background-color:blue;
+                width: 400px;
+                height: 400px;
+                margin-left: 55px;
+                margin-top: 18px;
+                margin-right: 18px;
+                margin-bottom: 18px;
+                border-radius: 20px;
+            }
+            .keathwa2 img:hover{
+                cursor: pointer;
+            }
+            .kmk img{
+                background-color:blueviolet;
+                width: 400px;
+                height: 400px;
+                margin-left: 50px;
+                margin-top: 18px;
+                margin-right: 18px;
+                margin-bottom: 18px;
+                border-radius: 20px;
+            }
+            .kmk img:hover{
+                cursor: pointer;
+            }
+            .usm img{
+                background-color:coral;
+                width: 400px;
+                height: 400px;
+                margin-left: 50px;
+                margin-top: 18px;
+                margin-right: 18px;
+                margin-bottom: 18px;
+                border-radius: 20px;
+            }
+            .usm img:hover{
+                cursor: pointer
+            }
+            .lowerEducation div h3{
+                text-align: center;
+            }
+            .lowerEducation div p{
+                text-align: center;
+            }
+
+            .Skill{
+                background: lightgreen;
+                display: grid;
+                grid-template-rows: 1fr 5fr 5fr;
+            }
+            .SkillUpper{
+                background-color: lightgreen(128, 255, 128);
+                padding-left: 50px;
+            }
+            .SkillUpper h1{
+                font-size: 51px;
+                color: #000;
+                margin-top: 104px;
+                margin-bottom: 25px;
+                font-weight: 700;
+                line-height: 1;
+                border-bottom: 1px solid rgb(255, 255, 255);
+                border-width: 3px;
+            }
+            .upperEducation h3{
+                font-size: 17px;
+                color: #000;
+                font-weight:400;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                padding-bottom: 37px;
+            }
+            .SkillMiddle{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                background-color: rgb(191, 238, 191);
+                padding-bottom: 50px;
+                padding-right: 50px;
+                height: 390px;
+            }
+            .SkillMiddle1{
+                margin-left: 50px;
+                margin-top: 50px;
+                border: 1px solid white;
+                background-color: rgb(239, 255, 239);
+                border-radius: 30px;
+                text-align: center;
+                padding:30px;
+            }
+            .SkillMiddle2{
+                margin-left: 50px;
+                margin-top: 50px;
+                border: 1px solid white;
+                background-color: rgb(239, 255, 239);
+                border-radius: 30px;
+                text-align: center;
+                padding:30px;
+            }
+            .SkillMiddle3{
+                margin-left: 50px;
+                margin-top: 50px;
+                border: 1px solid white;
+                background-color:rgb(239, 255, 239);
+                border-radius: 30px;
+                text-align: center;
+                padding: 30px;
+            }
+        
+            .SkillLower{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                background-color: rgb(191, 238, 191);
+                padding-bottom: 50px;
+                padding-right: 50px;
+                height: 390px;
+                padding: 30px;
+            }
+            .SkillLower1{
+                margin-left: 25px;
+                margin-right: 27px;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                border: 1px solid white;
+                background-color: rgb(239, 255, 239);
+                border-radius: 30px;
+                text-align: center;
+                padding: 30px;
+            }
+            .SkillLower2{
+                margin-left: 25px;
+                margin-right: 27px;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                border: 1px solid white;
+                background-color: rgb(239, 255, 239);
+                border-radius: 30px;
+                text-align: center;
+                padding: 30px;
+            }
+            .SkillLower3{
+                margin-left: 25px;
+                margin-right: 27px;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                border: 1px solid white;
+                background-color: rgb(239, 255, 239);
+                border-radius: 30px;
+                text-align: center;
+                padding: 30px;
+            }
+            h2{
+                padding-bottom: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+<!--CONTENT-->
+        <container class="Container ">
+            <section class="Header ">
+                <nav>
+                    <ul>
+                        <li><img class="logo" href="http://www.usm.my/" src="logo_portfolio.png"></img></li>
+                        <li><a href="index.html">Index</a></li>
+                        <li><a href="#section1">Home</a></li>
+                        <li><a href="#section2">About</a></li>
+                        <li><a href="#section3">Education</a></li>
+                        <li><a href="#section4">Skill</a></li>
+                        <li><a href="#section5">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section class="HomePage" id="section1"></section>
+            <section class="AboutMe" id="section2">
+                <div class="about-text">
+                    <h1>About Me</h1>
+                    <h3>"Knowing yourself is the beginning of all wisdom" ~ Aristotle</h3>
+                </div>
+                <div class="profile">
+                    <div class="profileleft">
+                        <img class="profileResize" src="About.jpg"></img>
+                    </div>
+                    <div class="profileRight">
+                        <div class="profileRightUpper">
+                            <h1>Intermediate Web Developer</h1>
+                            <p>A little amateur programmer who learns programmming during freetime</p>
+                        </div>
+                        <div class="profileRightMiddle">
+                            <div class="profileRM-left">
+                                <h5>>>  Name: Lim Miin Ning</h5>
+                                <h5>>>  Nickname: Lemon</h5>   
+                                <h5>>>  Age: 19</h5>    
+                                <h5>>>  Birthday: 18-01-2003</h5> 
+                            </div>  
+                            <div class="profileRM-right">
+                                <h5>>>  City: Alor Setar, Kedah</h5>
+                                <h5>>>  Degree: Undergraduate</h5>
+                                <h5>>>  Email: limmiinning@gmail.com</h5>
+                                <h5>>>  Tel no: 01115411073 </h5>
+                            </div>
+                    </div>
+                    <div class="profileRightLower">
+                    </div>
+                </div>
+            </section>
+            <section class="Education" id="section3">
+                <div class="upperEducation">
+                    <h1>My Education</h1>
+                    <h3>"Live as if you were to die tomorrow. Learn as if you were to live forever" ~ Mahatma Gandhi</h3>
+                </div>
+                <div class="lowerEducation">
+                    <div class="keathwa2">
+                        <a class="w3-container w3-hover-opacity" href="https://smjkkeathwa2.edu.my/"><img src="keathwa2.jpeg"></img></a>
+                        <h3>SMJK KEAT HWA 2</h3>
+                        <p>Jalan Kuala Kedah, Taman Sri Abadi,<br>06600 Kuala  Kedah, Kedah</p>
+                    </div>
+                    <div class="kmk">
+                        <a class="w3-container w3-hover-opacity" href="http://www.kmk.matrik.edu.my/"><img src="kmk.jfif"></img></a>
+                        <h3>KEDAH MATRICULATION COLLEGE</h3>
+                        <p>06010 Changlun, Kedah</p>
+                    </div>
+                    <div class="usm">
+                        <a class="w3-container w3-hover-opacity" href="http://www.usm.my/"><img src="usm.jpg"></img></a>
+                        <h3>UNIVERSITY SAINS MALAYSIA</h3>
+                        <p>11800 Gelugor, Penang</p>
+                    </div>
+                </div>
+            </section>
+            <section class="Skill" id="section4">
+                <div class="SkillUpper">
+                    <h1>Skills & Abilities</h1>
+                    <h3>"Repetition is the mother of skill" ~ Tony Robbins</h3>
+                </div>
+                <div class="SkillMiddle">
+                    <div class="SkillMiddle1">
+                        <i class='fas fa-guitar' style="font-size: 48px;"></i>
+                        <h2>Guitar</h2>
+                        <p>A beginner level guitarist who starts to play guitar six months ago and often play it as a hobby during the leisure time. Capable of playing some chords and fascinating songs of some famous Aisan singers, like Jay Chou, J.J Lim and so on. </p>
+                    </div>
+                    <div class="SkillMiddle2">
+                        <i class='fas fa-table-tennis' style="font-size:48px;"></i>
+                        <h2>Table Tennis</h2>
+                        <p>During the high school times, I was once a school represantive in table tennis team, and won as a runner-up in district level competition, also known as Majlis Sukan Sekolah Daerah(MSSD). </p>
+                    </div>
+                    <div class="SkillMiddle3">
+                        <i class='fas fa-laptop-code' style='font-size:48px;'></i>
+                        <h2>Programming</h2>
+                        <p>Acquire the skills and knowledge in the following programming languages: HTML, CSS, Javascript, PHP, MySql, Java, C++, Python and Pygame. Have the experience of making a hostel website for school assignment and also create a pygame(Flappy Bird, Sonic X Dinousaur) using Pygame prior to entering university.</p>
+                    </div>
+                </div>
+                <div class="SkillLower">
+                    <div class="SkillLower1">
+                        <i class='fas fa-arrows-alt' style='font-size:48px;'></i>
+                        <h2>Flexibility</h2>
+                        <p>Have the capability to quickly adapt to new cirucmstances as they rise. Would like to negotiate and change the plans to navigate or overcome the unanticipated obstacles.Also willing to join the team and helping whenever I am needed.</p>
+                    </div>
+                    <div class="SkillLower2">
+                        <i class='fas fa-brain' style='font-size:48px;'></i>
+                        <h2 >Critical Thinking</h2>
+                        <p>Able to think about a topic or issue in an objective and critical way. Identity the different arguments there are in relation to a parcticular issue. Also, being able to evaluate a point of view to detemrmine how strong or valid it is.</p>
+                    </div>
+                    <div class="SkillLower3">
+                        <i class='fas fa-clock' style='font-size:48px;'></i>
+                        <h2>Time Management</h2>
+                        <p>Always know which task/project to direct attention toward at any given moment. Mind won't scattered by all the other things on to-do list. Being able to accomplish a task within a given time</p>
+                    </div>
+                </div>
+            </section>
+            <section class="lowestBox footer" id="section5">
+                <div class="col1">
+                    <h4>USEFUL LINKS</h4>
+                    <a href="https://www.w3schools.com/">W3Schools</a>
+                    <a href="https://www.google.com/">Google</a>
+                    <a href="https://www.canva.com/templates/">Canva</a>
+                    <a href="https://accounts.spotify.com/en/login?continue=https">Spotify</a>
+                    <a href="https://www.grammarly.com/plagiarism-checker?q=plagiarism&utm_source=google&utm_medium=cpc&utm_campaign=11903460924&utm_content=487967678620&utm_term=plagiarism%20checker&matchtype=b&placement=&network=g&gclid=EAIaIQobChMIxaG0sM-U-wIVUCUrCh2ZHw66EAAYASAAEgLk5vD_BwE&gclsrc=aw.ds">Plagiarism Checker</a>
+                    
+                </div>
+                <div class="col2">
+                    <h4>COMMENTARY</h4>
+                    <form>
+                        <textarea  name="comment" rows="9" cols="40" placeholder="Please leave your comment here for future reference!"></textarea>
+                        <br><button name="submit">Submit</button>
+                    </form>
+                </div>
+                <div>
+                    <h4>CONTACT</h4>
+                    <a href="https://www.facebook.com/profile.php?id=100004293498253"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/lmn_1801"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wasap.my/601115411073"><i class="fa-brands fa-whatsapp"></i></a>
+                    <p>+601115411073<br>limmiinning@gmail.com<br>111, Taman Berjaya<br>06600 Jalan Kuala Kedah<br>Alor Setar, Kedah Darul Aman<br></p> 
+                </div>
+            </section>
+        </container>
+    </body>
+
+</html>

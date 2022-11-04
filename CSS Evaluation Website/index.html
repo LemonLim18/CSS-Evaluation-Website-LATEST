@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang-="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--This tag allows the web author to decide which version of Internet explorer that the page should be rendered as.就是选择哪个版本的页面-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>LIM MIIN NING</title>
+
+        <!--rel used to define the relationship between the linked file and html, href refers to the reference sites.-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster"> 
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+        <link rel="stylesheet" href="indexStyle.css">
+        <script src="https://kit.fontawesome.com/feff919479.js" crossorigin="anonymous"></script>
+        <style>
+            .Container{
+                display: grid;
+                grid-template-rows: 5fr 1fr;
+                
+            }
+            .upperBox{
+                padding-bottom: auto;
+            }
+            .leftRight_box{
+                display: grid;
+                grid-template-columns: 3fr 1fr;
+            }
+            .leftBox{
+                background-image: url("background_image.gif");
+                
+            }
+            .rightBox{
+                display: grid;
+                grid-template-rows: 380px 100px 1200px;
+                background: rgb(123,134,232);
+                background: linear-gradient(164deg, rgba(123,134,232,1) 0%, rgba(246,140,255,1) 52%, rgba(255,222,50,1) 100%);
+                color: #40081a;
+                overflow: auto;
+            }
+            .rightBox1{
+                background:white;
+            }
+            .logo{
+                position: static;
+                top: 20px;
+                right: 3.5vw;
+                width: 340px;
+                height: 180px;
+                display: block;
+                margin-top: 15px;
+                padding-bottom: 20px;
+                padding-left: 80px;
+            }
+            .profile{
+                position: static;
+                width: 165px;
+                height: 160px;
+                top: 240px;
+                right: 8vw;
+                
+                display: block;
+                margin-left: 118px;
+                border: 2px solid steelblue;
+                border-radius: 5px;
+            }
+
+            .rightBox2{
+                background: rgb(80, 6, 252);
+                color: white;
+                font-family: "Audiowide", sans-serif;
+            }
+            
+            .rightBox3{
+                background: rgb(123,134,232);
+                background: linear-gradient(164deg, rgba(123,134,232,1) 0%, rgba(246,140,255,1) 52%, rgba(255,222,50,1) 100%);
+            }
+            /*Font style for header title*/
+            section div h1{
+                font-style: none;
+                font-family: "Audiowide", sans-serif;
+                font-size: 40px;
+                color: #FFFFFF;
+            }
+            section div h3,h5{
+                font-style: italic;
+                font-weight:55px;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: #FFFFFF;
+            }
+            /*icon style*/
+            div i{
+                font-size: 46px;
+                margin: 25px 25px 30px 25px;
+                cursor: pointer;
+            }
+            div i:hover{
+                color:rgb(47, 47, 252);
+            }
+            div i:visited{
+                color: none;
+            }
+            /* NAVIGATOR//MENU */
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+                position: absolute;
+                top: 200px;
+                width: 59.5vw;
+                min-width: 484.3px;
+                border-radius: 15px;
+            }
+
+            li {
+                float: left;
+                border-right: 1px solid #bbb;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover{
+                background-color: rgb(47, 47, 252);
+                color: white; 
+            }
+
+            .active {
+                background-color: white;
+                color:rgb(47, 47, 252);
+            }
+            /*iframe*/
+            iframe{
+                height: 75%;
+                width: 80.15%;
+                min-width: 485px;
+            }
+            /*Highlight mark*/
+            mark{
+                background-color: #ffc067;
+                color: rgba(0, 0, 0, 0.903);
+            }
+            /*Button to portfolio page*/
+            .portfolioPage{
+                padding: 18px 40px 18px 40px;
+                border: 1px solid rgb(183, 183, 183);
+                background: rgb(31, 174, 231);
+                color: #FFFFFF;
+                border-radius: 30px;
+            }
+            .portfoliopage:hover{
+                color: white;
+                background-color: grey;
+            }
+            .rightBox blockquote button:hover{
+                background-color: royalblue;
+            }
+        </style>
+    </head>
+
+    <body>
+<!--CONTENT-->
+        <container class="Container">
+            <section class="upperBox leftRight_box">
+                <div class="leftBox">
+                    <h1 class="w3-animate-fading"><br>&ensp;CS SOCIETY&nbsp;|&nbsp;TECH EVALUATION<br></h1>
+                    <h5 class="w3-animate-fading">&emsp;&ensp;Building the future with tech, gear and software.<br><br><br></h5>
+                    <br>
+               
+                    <ul>
+                        <li><a class="active" href="https://login.usm.my/adfs/ls/?wa=wsignin1.0&wct=2022-10-31T12:23:52Z&wtrealm=urn:federation:campusonline.usm.my/login&wctx=OmNhbXB1c29ubGluZS51c20ubXkvOg==">CampusOnline</a></li>
+                        <li><a href="https://elearning.usm.my/sidang2223/login/index.php">E-Learning</a></li>
+                        <li><a href="CS Timetable.pdf" download>CS Timetable</a></li>
+                        <li><a href="http://www.mppclicks.usm.my/index.php/ms/info/jadual-bas">Bus Schedule</a></li>
+                        <li><a href="#about">FAQ Servicedesk</a></li>
+                      </ul>
+                    <iframe width="80%" height="800" src="http://www.usm.my/"></iframe>
+                </div>
+
+                <div class="rightBox">
+                    <box class="rightBox1">
+                        <img class="logo w3-container w3-center w3-animate-opacity" src = "USM Logo.jpg"></img>
+                        <img class ="profile w3-container w3-center w3-animate-opacity" src="profile_pic.jpg"></img>
+                    </box>
+                    <box class="rightBox2 w3-container w3-center w3-animate-opacity">
+                        <h1 style="text-align: center; padding: 1px;">                        
+                            QUICK BRIEF
+                        </h1>
+                    </box>
+                    <box class="rightBox3">
+                        <blockquote class="blockquote w3-container w3-center w3-animate-opacity">
+                            <p style="font-family: Georgia, 'Times New Roman', Times, serif; text-align: justify; text-justify: inter-word; line-height: 2.44 ;">
+                                "Hello, seniors!! My name is <mark><b>Lim Miin Ning</b></mark> and I'm one of the candidates in this selection stage. For your information,
+                                this is just my index webpage that provides simple navigators and shortcuts to some educational webpages, such as <mark>E-learning, CS Timetable, CampusOnline</mark>, et cetera. 
+                                To have a better or clearer understanding about me, please click the button below to enter my portfolio webpage.
+                                See you there!"
+                            </p>
+                            <br><br><button class="portfolioPage" onclick="location.href='portfolio.html';">LET'S GO !</button>
+                        </blockquote>
+                    </box>
+                </div>
+            </section>
+
+            <section class="lowerBox footer">
+                <div class="col1">
+                    <h4>USEFUL LINKS</h4>
+                    <a href="https://www.w3schools.com/">W3Schools</a>
+                    <a href="https://www.google.com/">Google</a>
+                    <a href="https://www.canva.com/templates/">Canva</a>
+                    <a href="https://accounts.spotify.com/en/login?continue=https">Spotify</a>
+                    <a href="https://www.grammarly.com/plagiarism-checker?q=plagiarism&utm_source=google&utm_medium=cpc&utm_campaign=11903460924&utm_content=487967678620&utm_term=plagiarism%20checker&matchtype=b&placement=&network=g&gclid=EAIaIQobChMIxaG0sM-U-wIVUCUrCh2ZHw66EAAYASAAEgLk5vD_BwE&gclsrc=aw.ds">Plagiarism Checker</a>
+                </div>
+                <div class="col2">
+                    <h4>COMMENTARY</h4>
+                    <form>
+                        <textarea  name="comment" rows="9" cols="40" placeholder="Please leave your comment here for future reference!"></textarea>
+                        <br>
+                        <button name="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="col3">
+                    <h4>CONTACT</h4>
+                    <a href="https://www.facebook.com/profile.php?id=100004293498253"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/lmn_1801"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wasap.my/601115411073"><i class="fa-brands fa-whatsapp"></i></a>
+                    <p>+601115411073<br>limmiinning@gmail.com<br>111, Taman Berjaya<br>06600 Jalan Kuala Kedah<br>Alor Setar, Kedah Darul Aman<br></p> 
+                </div>
+            </section>
+        </container>
+    </body>
+
+</html>

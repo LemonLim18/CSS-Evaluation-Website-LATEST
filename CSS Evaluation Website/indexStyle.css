@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.lowerBox{
+    overflow: auto;
+    background: #333;
+}
+
+.footer{
+    padding: 50px 150px 40px 150px ;
+    width: 100%;
+    /*Every element in this section will take up same area of space regardless of how big the element is*/
+    display: flex; 
+    color: #FFFFFF;
+}
+.footer div{
+    text-align: center;
+}
+.col1 a{
+    /*display block used to break line between each specified element*/
+    display: block;
+    /*Used to disable all decoration on the text, be it color, size, underline*/
+    text-decoration: none; 
+    color: #FFFFFF;
+    margin-bottom: 10px;
+
+}
+.col1 a:hover{
+    color:rgb(96, 96, 255);
+}
+.col2{
+    flex-grow: 2;
+}
+
+.footer div h4{
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+form textarea{
+    border-end-start-radius: 4px;
+    height: 150px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+form button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    padding: 10px 10px;
+    width: 120px;
+    height: 45px;
+    color: #FFFFFF;
+    text-align: center;
+    background: transparent;
+    border: 1.5px solid white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+form button:hover{
+    background: white;
+    color: #333;
+    cursor: pointer;
+}
+a:hover{
+    text-decoration-line: underline;
+}
+
+
+/*借放*/
+table{
+    width: 60%;
+    height: 5%;
+    text-align: center;
+    border-collapse: collapse;
+    background-color:rgb(130, 12, 180);
+    
+}
+table, td {
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: whitesmoke;
+    padding: 3px;
+}
+
+
+.image1 {
+    position: fixed;
+    left: 0px;
+    top: -45px;
+    width: 1220px;
+    height: 800px;
+}
+.image2 {
+    position: fixed;
+    top: -10px;
+    right: -10px;
+    width: 35.5vw;
+    height: 800px;
+}
+.fit {
+    width: 28vw;
+    height: 800px;
+}
+.font_fit{
+    font-size: 1vw;
+}
+.resp-iframe{
+   position: absolute;
+   top: 210px;
+   left: 25px;
+   width: 59.4vw;
+   overflow: hidden;
+}
+
+
+
+div > h1{
+    font-family: "Audiowide", sans-serif;
+    color: #FFFFFF;
+}
+div > h3,h5{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #FFFFFF;
+}
+.text_right{
+    position: absolute;
+    text-align: center;
+    top: 300px;
+    right: 10px;
+}
+.icon{
+    position:absolute;
+    top:5000px;
+    left:0px;
+}
+img{
+    position: absolute;
+    width: 11vw;
+    height: 12vw;
+    top: -123px;
+    right: 6.35vw;
+}
+
+.orange{ 
+    position: absolute;
+    top: 10.5vh;
+    right: -1vw;
+    width: 27vw;
+    padding: 3px;
+    text-align: center;
+    background-color: orange;
+}
+.blockquote{
+    max-width: 600px;
+    margin: 10px 30px;
+    padding: 25px;
+}
